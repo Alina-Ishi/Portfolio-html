@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+  @keyframes twinkle {
+            0% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+        
+        .star {
+            position: absolute;
+            background-color: white;
+            border-radius: 50%;
+            animation: twinkle infinite alternate;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat';
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .orbitron-font {
+            font-family: 'Orbitron', 'Robtronika';
+        }
+
+        footer {
+            font-family: 'Robtronika';
+        }
+

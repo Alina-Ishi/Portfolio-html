@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Портфолио</title>
+       <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+        <body class="bg-[#0a0a0f] text-[#f8f9fa] relative">
+            
+              <!-- Фон со звездами -->
+             <div class="fixed inset-0 -z-10 overflow-hidden" id="stars-bg"></div>
+
+             <!-- Навигация -->
+    <header class="fixed top-0 w-full z-50 px-4 sm:px-8 py-5 bg-[#0a0a0f]/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="orbitron-font text-2xl sm:text-3xl font-bold bg-gradient-to-r from-[#7b2cbf] to-[#4361ee] bg-clip-text text-transparent">
+                STELLAR PORTFOLIO
+            </div>
+            
+            <!-- Мобильное меню кнопка -->
+            <button class="sm:hidden text-2xl" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Десктопное меню -->
+            <nav class="hidden sm:block">
+                <ul class=" orbitron-font flex space-x-8">
+                    <li><a href="#home" class="hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">home</a></li>
+                    <li><a href="#skills" class="hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">skills</a></li>
+                    <li><a href="#portfolio" class="hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Мобильное меню (скрыто по умолчанию) -->
+            <nav class="sm:hidden fixed top-[70px] right-[-100%] w-48 bg-[#12121a] p-5 rounded-bl-lg transition-all duration-300 shadow-2xl" id="mobile-menu">
+                <ul class="orbitron-font flex flex-col space-y-4">
+                    <li><a href="#home" class="block hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">home</a></li>
+                    <li><a href="#skills" class="block hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">skills</a></li>
+                    <li><a href="#portfolio" class="block hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">portfolio</a></li>
+                    <li><a href="#contact" class="block hover:text-[#9d4edd] transition-colors duration-300 relative after:content-[''] after:absolute after:bottom-[-5px] after:left-0 after:w-0 after:h-[2px] after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:transition-all after:duration-300 hover:after:w-full">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Главная-->
+            <section class="min-h-screen flex items-center justify-center px-10 pt-20 flex gap-60" id="home">
+                <div class=" flex-col">
+                   <h1 class="'Montserrat' text-4xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-[#7b2cbf] to-[#4361ee] bg-clip-text text-transparent leading-tight">Hello, I’m Alina</h1>
+                  <div class="">
+                      <p class="text-2x1 sm:text-1xl md:text-2xl lg:text-3xl">Графический дизайнер</p>
+                      <p class="text-2x1 sm:text-1xl md:text-2xl lg:text-3xl">Программист</p>
+                      <p class="text-2x1 sm:text-1xl md:text-2xl lg:text-3xl">3д - моделлер</p>
+                    </div>
+                </div>
+                <img src="image 1.png" alt="Фото">
+            </section>
+
+            <!--Навыки-->
+                 
+    <section id="skills" class="min-h-screen py-20 px-4 flex items-center">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="'Robotronika' tracking-wide text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-24 after:h-1 after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:rounded">
+                skills
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Skill 1 -->
+                <div class="bg-[#12121a] p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl mb-4 bg-gradient-to-r from-[#7b2cbf] to-[#4361ee] bg-clip-text text-transparent">
+                        <i class="fa fa-cube"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">3 д моделирование</h3>
+                    <p class="text-sm text-[#adb5bd]">Blender, Maxon Cinema 4D</p>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="bg-[#12121a] p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl mb-4 bg-gradient-to-r from-[#7b2cbf] to-[#4361ee] bg-clip-text text-transparent">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Дизайн</h3>
+                    <p class="text-sm text-[#adb5bd]">UI/UX, Figma, Adobe Photoshop</p>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="bg-[#12121a] p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
+                    <div class="text-4xl mb-4 bg-gradient-to-r from-[#7b2cbf] to-[#4361ee] bg-clip-text text-transparent">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">Веб-разработка</h3>
+                    <p class="text-sm text-[#adb5bd]">HTML, CSS, JS, Tailwind CSS, React </p>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+      <!-- Портфолио -->
+    <section id="portfolio" class="min-h-screen py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="orbitron-font text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-24 after:h-1 after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:rounded">
+                МОИ РАБОТЫ
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Проект 1 -->
+                  <div class="bg-[#12121a] rounded-xl overflow-hidden hover:scale-105 hover:shadow-[0_15px_30px_rgba(67,97,238,0.2)] transition-all duration-300">
+                     <div class="h-48 bg-gradient-to-br from-[#7b2cbf] to-[#4361ee] flex items-center justify-center text-5xl">
+                        <i class="fas fa-rocket text-white"></i>
+                      </div>
+                     <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#f8f9fa]">Иллюстрации</h3>
+                     </div>
+                 </div>
+                
+
+
+              
+
+                <!-- Проект 2 -->
+                <div class="bg-[#12121a] rounded-xl overflow-hidden hover:scale-105 hover:shadow-[0_15px_30px_rgba(67,97,238,0.2)] transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-[#7b2cbf] to-[#4361ee] flex items-center justify-center text-5xl">
+                        <i class="fas fa-meteor text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#f8f9fa]">Веб-сайты</h3>
+                    </div>
+                </div>
+
+                <!-- Проект 3 -->
+                <div class="bg-[#12121a] rounded-xl overflow-hidden hover:scale-105 hover:shadow-[0_15px_30px_rgba(67,97,238,0.2)] transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-[#7b2cbf] to-[#4361ee] flex items-center justify-center text-5xl">
+                        <i class="fas fa-satellite text-white"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-[#f8f9fa]">3 д модели</h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <!-- Контакты -->
+    <section id="contact" class="min-h-screen py-20 px-4 flex items-center">
+        <div class="max-w-6xl mx-auto w-full">
+            <h2 class="orbitron-font text-3xl md:text-4xl font-bold text-center mb-12 relative after:content-[''] after:absolute after:bottom-[-15px] after:left-1/2 after:-translate-x-1/2 after:w-24 after:h-1 after:bg-gradient-to-r after:from-[#7b2cbf] after:to-[#4361ee] after:rounded">
+                КОНТАКТЫ
+            </h2>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <!-- Контактная информация -->
+                <div class="flex-1">
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#7b2cbf] to-[#4361ee] rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Email</h3>
+                            <p class="text-[#adb5bd]">hello@stellar-portfolio.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#7b2cbf] to-[#4361ee] rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Телефон</h3>
+                            <p class="text-[#adb5bd]">+7 (+-+) +-+-++-++</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center mb-8">
+                        <div class="w-12 h-12 bg-gradient-to-br from-[#7b2cbf] to-[#4361ee] rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Telegram</h3>
+                            <p class="text-[#adb5bd]">@user</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="py-8 px-4 bg-[#12121a] text-center">
+        <div class="max-w-7xl mx-auto">
+            
+            <p class="text-[#adb5bd] 'Robtronika'">© All rights reserved</p>
+        </div>
+    </footer>
+
+            <script src="index.js"></script>  
+        </body>
+    
+</html>
